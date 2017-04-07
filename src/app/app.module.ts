@@ -13,6 +13,7 @@ import { CompleteComponent } from './pages/complete/complete.component';
 
 import { petTagReducer } from './core/pet-tag.reducer';
 import { TagShapeComponent } from './pages/create/tag-shape/tag-shape.component';
+import { TagTextComponent } from './pages/create/tag-text/tag-text.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TagShapeComponent } from './pages/create/tag-shape/tag-shape.component'
     HomeComponent,
     CreateComponent,
     CompleteComponent,
-    TagShapeComponent
+    TagShapeComponent,
+    TagTextComponent
   ],
   imports: [
     BrowserModule,
