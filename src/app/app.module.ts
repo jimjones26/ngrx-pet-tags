@@ -16,6 +16,7 @@ import { TagShapeComponent } from './pages/create/tag-shape/tag-shape.component'
 import { TagTextComponent } from './pages/create/tag-text/tag-text.component';
 import { TagExtrasComponent } from './pages/create/tag-extras/tag-extras.component';
 import { TagPreviewComponent } from './tag-preview/tag-preview.component';
+import { AuthService } from './core/auth.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { TagPreviewComponent } from './tag-preview/tag-preview.component';
     StoreModule.provideStore({ petTag: petTagReducer }),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
