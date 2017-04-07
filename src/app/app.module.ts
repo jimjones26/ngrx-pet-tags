@@ -12,13 +12,15 @@ import { CreateComponent } from './pages/create/create.component';
 import { CompleteComponent } from './pages/complete/complete.component';
 
 import { petTagReducer } from './core/pet-tag.reducer';
+import { TagShapeComponent } from './pages/create/tag-shape/tag-shape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CreateComponent,
-    CompleteComponent
+    CompleteComponent,
+    TagShapeComponent
   ],
   imports: [
     BrowserModule,
